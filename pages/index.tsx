@@ -26,7 +26,6 @@ export default function Home() {
                             subtitle="Software Engineer"
                             image={<ProfileImage imgSrc={"/profile.jpg"} alt={"Me"}/>}>
                             <SocialLinkList links={[
-                                {href: "mailto:raimund@rittnauer.at", icon: <SlBubble/>},
                                 {href: "http://rittnauer.at", icon: <SlHome/>},
                                 {href: "https://github.com/raaaimund", icon: <SlSocialGithub/>},
                                 {href: "https://www.linkedin.com/in/rittnauer", icon: <SlSocialLinkedin/>},

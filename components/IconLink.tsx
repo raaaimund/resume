@@ -5,7 +5,7 @@ export default function IconLink(props: Props) {
     return (
         <Link
             className="text-blue-600 p-2 max-lg:p-0 hover:bg-blue-100 hover:border hover:border-blue-100 hover:rounded"
-            href={props.href}>{props.icon}</Link>
+            href={props.href} target="_blank">{props.icon}</Link>
     )
 }
 
