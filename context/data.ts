@@ -264,7 +264,7 @@ const jobs: JobEntry[] = [
             {
                 description: "Ein Projekt um React und Next.js kennen zu lernen.",
                 url: "http://cv.rittnauer.at",
-                technologies: technologies.filter(technology => [43, 44, 46].find(id => technology.id === id))
+                technologies: technologies.filter(technology => [43, 44, 46, 35, 37].find(id => technology.id === id))
             },
             {
                 description: "Versuche alle side projects via IaC zu verwalten.",
