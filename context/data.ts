@@ -265,7 +265,7 @@ const jobs: JobEntry[] = [
             {
                 description: "Vereinsmitglied bei ICT4D Austria. Bei der Gestaltung und Umsetzung der Webseite mitgeholfen. Hauptsächelich DevOps.",
                 url: "https://www.ict4d.at/",
-                technologies: technologies.filter(technology => [43, 44, 35, 37, 38].find(id => technology.id === id))
+                technologies: technologies.filter(technology => [43, 44, 35, 37].find(id => technology.id === id))
             },
             {
                 description: "Ein Projekt um React und Next.js kennen zu lernen.",
