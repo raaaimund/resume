@@ -67,9 +67,11 @@ const jobs: JobEntry[] = [
                 },
                 {
                     description: "Gestaltung und Unterricht eines Kurses für Java Anfänger.",
+                    technologies: technologies.filter(technology => [48].find(id => technology.id === id))
                 },
                 {
                     description: "Gestaltung und Unterricht eines Kurses für Java OOP, etwas Software-Architektur und die Verwendung von Git.",
+                    technologies: technologies.filter(technology => [48, 37, 29].find(id => technology.id === id))
                 },
             ]
     },

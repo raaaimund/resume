@@ -1,9 +1,16 @@
 # My resume
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-- React
-- TypeScript
-- Next.js
+- [React](https://reactjs.org/)
+   - [Context](https://reactjs.org/docs/context.html) 
+   - [Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+Fonts used
+- [Mona Sans](https://github.com/github/mona-sans)
+- [Hubot Sans](https://github.com/github/hubot-sans)
 
 ## Getting started
 
