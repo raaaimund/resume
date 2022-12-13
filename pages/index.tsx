@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {SlSocialLinkedin, SlSocialGithub, SlBubble, SlHome} from "react-icons/sl";
+import {SlSocialLinkedin, SlSocialGithub, SlHome} from "react-icons/sl";
 import Card from "../components/Card";
 import React from "react";
 import SocialLinkList from "../components/SocialLinkList";
