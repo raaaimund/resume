@@ -81,4 +81,4 @@ jobs:
           # Local directory
           localDir: ./out
           # Remote directory
-          remoteDir: /resume
+          remoteDir: ${{ secrets.FTP_DIRECTORY }}
