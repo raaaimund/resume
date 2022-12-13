@@ -7,7 +7,7 @@ export default function UsedTechnologySelector() {
     const {state, dispatch} = useSelectedTechnologies()
     return (
         <Card
-            title="Used technologies">
+            title="Verwendete Technologien">
             <div>
                 {state.technologies.map((technology, index) =>
                     <TechnologyChip key={index} id={technology.id} name={technology.name}/>
