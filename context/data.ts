@@ -48,6 +48,10 @@ const technologies: Technology[] = [
     {id: 44, name: "Tailwind CSS"},
     {id: 45, name: "Ansible"},
     {id: 46, name: "Next.js"},
+    {id: 47, name: "ASP.Net MVC Core"},
+    {id: 48, name: "Java"},
+    {id: 49, name: "R"},
+    {id: 50, name: "Typescript"},
 ]
 
 const jobs: JobEntry[] = [
@@ -124,12 +128,12 @@ const jobs: JobEntry[] = [
                 {
                     description: "Programmierung einer Web-Applikation und Android-Applikation für ein Wächterkontrollsystem.",
                     url: "",
-                    technologies: technologies.filter(technology => [27, 29, 7, 10, 30, 11, 15, 16, 13, 6].find(id => technology.id === id))
+                    technologies: technologies.filter(technology => [27, 29, 19, 10, 30, 20, 15, 16, 13, 6, 47].find(id => technology.id === id))
                 },
                 {
                     description: "Programmierung einer Web-Applikation und Android-Applikation für die Unterstützung der Arbeitsplatzinspektion beim Bau von Windkraftanlagen.",
                     url: "",
-                    technologies: technologies.filter(technology => [7, 10, 11, 15, 16, 21].find(id => technology.id === id))
+                    technologies: technologies.filter(technology => [7, 10, 11, 15, 16, 21, 13, 14, 18].find(id => technology.id === id))
                 },
                 {
                     description: "Administration und Verwaltung der internen Serverstruktur und des Firmennetzwerks.",
@@ -192,9 +196,11 @@ const jobs: JobEntry[] = [
             <Project[]>[
                 {
                     description: "Bachelorstudium Wirtschaftsinformatik",
+                    technologies: technologies.filter(technology => [48, 49, 50, 43].find(id => technology.id === id))
                 },
                 {
                     description: "Titel der Bachelorarbeit \"Enhancing the Resilience of Software Engineering Courses by Implementing Continuous Education using Computers and Smartphones exemplified by rural India\".",
+                    technologies: technologies.filter(technology => [35, 37].find(id => technology.id === id))
                 },
                 {
                     description: "Seit 2019 Mitglied in der Fachschaft Wirtschaftsinformatik & Data Science. Journaldienst und Beratung von Studenten.",
@@ -216,7 +222,7 @@ const jobs: JobEntry[] = [
     {
         company: "Österreichisches Bundesheer",
         website: "https://www.bundesheer.at",
-        occupation: "Grundwehrdiener",
+        occupation: "Grundwehrdienst",
         time: "September 2011 bis Februar 2012",
         projects: <Project[]>[]
     },
@@ -264,10 +270,10 @@ const jobs: JobEntry[] = [
             {
                 description: "Ein Projekt um React und Next.js kennen zu lernen.",
                 url: "http://cv.rittnauer.at",
-                technologies: technologies.filter(technology => [43, 44, 46, 35, 37].find(id => technology.id === id))
+                technologies: technologies.filter(technology => [43, 44, 46, 35, 37, 50].find(id => technology.id === id))
             },
             {
-                description: "Versuche alle side projects via IaC zu verwalten.",
+                description: "Verwaltung (mancher) Nebenprojekte via IaC.",
                 technologies: technologies.filter(technology => [45].find(id => technology.id === id))
             }
         ]
