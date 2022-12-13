@@ -10,7 +10,7 @@ export default function TechnologyChip(props: Props) {
             data-mdb-ripple="true"
             data-mdb-ripple-color="light"
             className={`
-                inline-block px-1 py-0.5 mr-1 border border-gray-300 text-gray-500 font-semibold text-xs
+                inline-block px-3 py-1.5 mr-1 mb-1 border border-gray-300 text-gray-500 font-semibold text-xs
                 hover:bg-blue-100 hover:shadow-lg
                 focus:shadow-lg focus:outline-none focus:ring-0
                 active:bg-blue-200 active:shadow-lg
