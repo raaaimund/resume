@@ -263,7 +263,7 @@ const jobs: JobEntry[] = [
             },
             {
                 description: "Ein Projekt um React und Next.js kennen zu lernen.",
-                url: "https://resume.rittnauer.at",
+                url: "http://cv.rittnauer.at",
                 technologies: technologies.filter(technology => [43, 44, 46].find(id => technology.id === id))
             },
             {
