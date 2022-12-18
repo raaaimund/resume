@@ -19,5 +19,5 @@ interface IconLink {
 }
 
 interface Props {
-    links: SocialLink[]
+    links: IconLink[]
 }
