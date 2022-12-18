@@ -10,6 +10,7 @@ import {
 } from "../context/SelectedTechnologyContext";
 import JobList from "../components/JobList";
 import Link from "next/link";
+import {GetServerSideProps} from "next";
 
 export default function Home() {
     return (
@@ -50,4 +51,15 @@ export default function Home() {
             </footer>
         </div>
     )
+}
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+    context.res.setHeader(
+        'Cache-Control',
+        'public, s-maxage=604800, stale-while-revalidate'
+    )
+
+    return {
+        props: {},
+    }
 }
