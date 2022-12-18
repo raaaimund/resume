@@ -5,7 +5,7 @@ import Project from "../context/models/Project";
 import Link from "next/link";
 import {SlLink} from "react-icons/sl";
 
-export default function Job(props: Props) {
+export default function JobCard(props: Props) {
     return (
         <Card title={props.occupation} subtitle={props.time}>
             <div className="text-gray-700 text-sm mb-2">

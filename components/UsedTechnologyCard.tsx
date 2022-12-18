@@ -3,7 +3,7 @@ import React from "react";
 import TechnologyChip from "./TechnologyChip";
 import {useSelectedTechnologies} from "../context/SelectedTechnologyContext";
 
-export default function UsedTechnologySelector() {
+export default function UsedTechnologyCard() {
     const {state, dispatch} = useSelectedTechnologies()
     return (
         <Card

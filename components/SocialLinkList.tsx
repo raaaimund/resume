@@ -1,5 +1,5 @@
 import React from "react";
-import IconLink from "./IconLink";
+import SocialLink from "./SocialLink";
 
 export default function SocialLinkList(props: Props) {
     return (
@@ -7,7 +7,7 @@ export default function SocialLinkList(props: Props) {
             {
                 props.links
                 && props.links.map((link, index) =>
-                    <IconLink key={index} href={link.href} icon={link.icon}/>
+                    <SocialLink key={index} href={link.href} icon={link.icon}/>
                 )}
         </div>
     );
@@ -19,5 +19,5 @@ interface IconLink {
 }
 
 interface Props {
-    links: IconLink[]
+    links: SocialLink[]
 }
