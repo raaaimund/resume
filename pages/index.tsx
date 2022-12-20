@@ -1,10 +1,8 @@
 import Head from 'next/head'
-import {SlSocialGithub} from "react-icons/sl";
 import React from "react";
 import {
     SelectedTechnologyProvider,
 } from "../context/SelectedTechnologyContext";
-import Link from "next/link";
 import dynamic from "next/dynamic";
 
 export default function Home() {
@@ -16,6 +14,9 @@ export default function Home() {
     })
     const UsedTechnologyCard = dynamic(() => import('../components/UsedTechnologyCard'), {
         loading: () => <span>Loading used technologies ...</span>,
+    })
+    const Footer = dynamic(() => import('../components/Footer'), {
+        loading: () => <span>Loading footer ...</span>,
     })
     return (
         <div>
@@ -36,14 +37,7 @@ export default function Home() {
                 </main>
             </SelectedTechnologyProvider>
 
-            <footer className="text-center lg:text-left text-gray-600">
-                <div className="text-center p-6">
-                    <Link className="text-blue-600 hover:text-blue-700 hover:underline"
-                          href="https://github.com/raaaimund/resume" target="_blank">
-                        Code on <SlSocialGithub/>
-                    </Link>
-                </div>
-            </footer>
+            <Footer/>
         </div>
     )
 }
