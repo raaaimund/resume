@@ -1,6 +1,6 @@
-import JobEntry from "./models/JobEntry";
-import Project from "./models/Project";
-import Technology from "./models/Technology";
+import JobEntry from "../context/models/JobEntry";
+import Project from "../context/models/Project";
+import Technology from "../context/models/Technology";
 
 const technologies: Technology[] = [
     {id: 1, name: "Joomla"},
@@ -63,7 +63,7 @@ const jobs: JobEntry[] = [
         projects:
             <Project[]>[
                 {
-                    description: "7 Monate Unterstützung beim Unterricht im Bachelor Lehrgang für Computer Science and Engineering (BTech) an einem College im ländlichen Indien.",
+                    description: "7 Monate Unterstützung beim Unterricht im Bachelor Lehrgang für Computer Science and Engineering (BTech) an einem College im ländlichen Indien."
                 },
                 {
                     description: "Gestaltung und Unterricht eines Kurses für Java Anfänger.",
@@ -85,70 +85,78 @@ const jobs: JobEntry[] = [
                 {
                     description: "Gestaltung der Firmenwebseite.",
                     url: "https://web.archive.org/web/20180801093029/http:/www.wagner-sicherheit.at/",
-                    technologies: technologies.filter(technology => [1].find(id => technology.id === id))
+                    technologies: technologies.filter(technology => [1].find(id => technology.id === id)),
+                    activities: ["Entwurf", "Entwicklung"]
                 },
                 {
                     description: "Gestaltung und Umsetzung der Webseite im Rahmen eines EU Projektes.",
                     url: "https://web.archive.org/web/20150225015939/http:/www.sicherimburgenland.at/",
-                    technologies: technologies.filter(technology => [1].find(id => technology.id === id))
+                    technologies: technologies.filter(technology => [1].find(id => technology.id === id)),
+                    activities: ["Entwurf", "Entwicklung"]
                 },
                 {
                     description: "Gestaltung und Umsetzung der Webseite im Rahmen eines EU Projektes.",
                     url: "https://web.archive.org/web/20200808205924/https:/www.sicheresburgenland.at/",
-                    technologies: technologies.filter(technology => [2, 3, 4, 5, 6].find(id => technology.id === id))
+                    technologies: technologies.filter(technology => [2, 3, 4, 5, 6].find(id => technology.id === id)),
+                    activities: ["Entwurf", "DevOps"]
                 },
                 {
                     description: "Relaunch des Webauftritts der Burgenländischen Krankenanstalten Gesellschaft m.b.H.",
                     url: "https://web.archive.org/web/20190709144407/http:/www.krages.at/",
-                    technologies: technologies.filter(technology => [2, 3, 4, 5, 6].find(id => technology.id === id))
+                    technologies: technologies.filter(technology => [2, 3, 4, 5, 6].find(id => technology.id === id)),
+                    activities: ["Entwurf", "DevOps"]
                 },
                 {
                     description: "Programmierung der digitalen Plattform \"Katastrophenschutzplan der burgenländischen Gemeinden\" im Rahmen eines EU Projektes. Ausgezeichnet mit dem \"Sicherheitspreis des Landes Burgenland\".",
                     url: "https://katplan.bgld.gv.at/",
-                    technologies: technologies.filter(technology => [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 6, 18, 19, 20, 21, 22, 23, 24, 25].find(id => technology.id === id))
+                    technologies: technologies.filter(technology => [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 6, 18, 19, 20, 21, 22, 23, 24, 25].find(id => technology.id === id)),
+                    activities: ["Entwurf", "Entwicklung", "Architektur", "DevOps"]
                 },
                 {
                     description: "Programmierung einer Web-Applikation für GPS Tracker. In Zusammenarbeit mit der Landespolizeidirektion Burgenland um gegen Traktordiebstähle vorzugehen.",
                     url: "",
-                    technologies: technologies.filter(technology => [26, 7, 10, 11, 15, 16, 21, 25].find(id => technology.id === id))
+                    technologies: technologies.filter(technology => [26, 7, 10, 11, 15, 16, 21, 25].find(id => technology.id === id)),
+                    activities: ["Entwurf", "Entwicklung", "Architektur", "DevOps"]
                 },
                 {
                     description: "Programmierung einer Web-Applikation für Gemeinden. Bürger können per SMS und Email über verschiedenste Tätigkeiten innerhalb der Gemeinden informiert werden.",
                     url: "",
-                    technologies: technologies.filter(technology => [7, 10, 11, 15, 16, 21].find(id => technology.id === id))
+                    technologies: technologies.filter(technology => [7, 10, 11, 15, 16, 21].find(id => technology.id === id)),
+                    activities: ["Entwurf", "Entwicklung", "Architektur", "DevOps"]
                 },
                 {
                     description: "Programmierung einer Web-Applikation und Android-Applikation für Sicherheitsfachkräfte zur Begehung und Evaluierung des Arbeitsschutzes.",
                     url: "",
-                    technologies: technologies.filter(technology => [27, 28, 29, 7, 10, 30, 11, 15, 16, 13, 14, 19, 20, 9].find(id => technology.id === id))
+                    technologies: technologies.filter(technology => [27, 28, 29, 7, 10, 30, 11, 15, 16, 13, 14, 19, 20, 9].find(id => technology.id === id)),
+                    activities: ["Entwurf", "Entwicklung Web", "Architektur Web", "DevOps"]
                 },
                 {
                     description: "Programmierung einer Web-Applikation zur internen Mitarbeiterverwaltung so wie zur Kommunikation mit den Mitarbeitern per SMS und Email.",
                     url: "",
-                    technologies: technologies.filter(technology => [7, 10, 30, 11, 15, 16, 13].find(id => technology.id === id))
+                    technologies: technologies.filter(technology => [7, 10, 30, 11, 15, 16, 13].find(id => technology.id === id)),
+                    activities: ["Entwurf", "Entwicklung", "Architektur", "DevOps"]
                 },
                 {
                     description: "Programmierung einer Web-Applikation und Android-Applikation für ein Wächterkontrollsystem.",
                     url: "",
-                    technologies: technologies.filter(technology => [27, 29, 19, 10, 30, 20, 15, 16, 13, 6, 47].find(id => technology.id === id))
+                    technologies: technologies.filter(technology => [27, 29, 19, 10, 30, 20, 15, 16, 13, 6, 47].find(id => technology.id === id)),
+                    activities: ["Entwurf", "Entwicklung Web", "Architektur Web", "DevOps"]
                 },
                 {
                     description: "Programmierung einer Web-Applikation und Android-Applikation für die Unterstützung der Arbeitsplatzinspektion beim Bau von Windkraftanlagen.",
                     url: "",
-                    technologies: technologies.filter(technology => [7, 10, 11, 15, 16, 21, 13, 14, 18].find(id => technology.id === id))
+                    technologies: technologies.filter(technology => [7, 10, 11, 15, 16, 21, 13, 14, 18].find(id => technology.id === id)),
+                    activities: ["Entwurf", "Entwicklung Web", "Architektur Web", "DevOps"]
                 },
                 {
                     description: "Administration und Verwaltung der internen Serverstruktur und des Firmennetzwerks.",
                     url: "",
-                    technologies: technologies.filter(technology => [31, 32, 33, 34, 6].find(id => technology.id === id))
+                    technologies: technologies.filter(technology => [31, 32, 33, 34, 6].find(id => technology.id === id)),
+                    activities: ["Beschaffung", "Planung", "Einrichtung Netzwerk", "Wartung", "Geräteverwaltung"]
                 },
                 {
-                    description: "DevOps Tätigkeiten.",
-                    url: "",
-                    technologies: technologies.filter(technology => [6, 15, 16, 35].find(id => technology.id === id))
-                },
-                {
-                    description: "Aufbau und Einrichtung der Sicherheitstechnik auf Veranstaltungen wie Donauinselfest, Nova Rock, Frequency und Urban Art Forms in Zusammenarbeit mit Rettung, Feuerwehr und Polizei."
+                    description: "Aufbau und Einrichtung der Sicherheitstechnik auf Veranstaltungen wie Donauinselfest, Nova Rock, Frequency und Urban Art Forms in Zusammenarbeit mit Rettung, Feuerwehr und Polizei.",
+                    activities: ["Beschaffung", "Planung", "Einrichtung Netzwerk", "Einrichtung Videoüberwachung"]
                 },
             ]
     },
@@ -161,7 +169,8 @@ const jobs: JobEntry[] = [
             <Project[]>[
                 {
                     description: "Mitarbeit bei diversen Softwareprojekten.",
-                    technologies: technologies.filter(technology => [26, 36].find(id => technology.id === id))
+                    technologies: technologies.filter(technology => [26, 36].find(id => technology.id === id)),
+                    activities: ["Entwicklung"]
                 },
             ]
     },
@@ -185,7 +194,9 @@ const jobs: JobEntry[] = [
         projects:
             <Project[]>[
                 {
-                    description: "Mitarbeit, Koordination und Versorgung der Sicherheitsmitarbeiter auf bei diversen Veranstaltungen wie Nova Rock, Frequency, Urban Art Forms, Konzerte in der Stadthalle Wien und Graz, Gasometer, Mörbisch, Steinbruch St. Margarethen und Festivals in Wiesen.",
+                    description: "Mitarbeit, Koordination und Versorgung der Sicherheitsmitarbeiter auf bei diversen Veranstaltungen " +
+                        "wie Nova Rock, Frequency, Urban Art Forms, Konzerte in der Stadthalle Wien und " +
+                        "Graz, Gasometer, Mörbisch, Steinbruch St. Margarethen und Festivals in Wiesen.",
                 },
             ]
     },
@@ -205,7 +216,8 @@ const jobs: JobEntry[] = [
                     technologies: technologies.filter(technology => [35, 37].find(id => technology.id === id))
                 },
                 {
-                    description: "Seit 2019 Mitglied in der Fachschaft Wirtschaftsinformatik & Data Science. Journaldienst und Beratung von Studenten.",
+                    description: "Seit 2019 Mitglied in der Fachschaft Wirtschaftsinformatik & Data Science.",
+                    activities: ["Journaldienst", "Beratung von Studenten"]
                 },
             ]
     },

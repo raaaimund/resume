@@ -1,6 +1,6 @@
 import Technology from "./models/Technology";
 import JobEntry from "./models/JobEntry";
-import data from "./data";
+import data from "../data/data";
 
 export default function selectedTechnologyReducer(state: State, action: Action): State {
     switch (action.type) {

@@ -20,6 +20,10 @@ export default function JobCard(props: Props) {
                         <Link className="text-blue-600 hover:text-blue-700 transition duration-300 ease-in-out mb-4"
                               href={project.url} target="_blank"><SlLink/></Link>}
                     </p>
+                    {project.activities &&
+                        <p className={"mb-2 text-sm text-gray-700"}>
+                            Hauptaufgaben: {project.activities.join(', ')}
+                        </p>}
                     <div className="mb-4">
                         {project.technologies && project.technologies.map((technology, index) =>
                             <TechnologyChip key={index} id={technology.id} name={technology.name}/>)

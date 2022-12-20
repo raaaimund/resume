@@ -3,7 +3,7 @@ import createContext from "./createContext";
 import selectedTechnologyReducer from "./selectedTechnologyReducer";
 import Technology from "./models/Technology";
 import JobEntry from "./models/JobEntry";
-import data from "./data";
+import data from "../data/data";
 
 const initialState: State = {
     selectedTechnologies: [],
