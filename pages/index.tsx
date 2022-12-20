@@ -1,15 +1,22 @@
 import Head from 'next/head'
 import {SlSocialGithub} from "react-icons/sl";
 import React from "react";
-import UsedTechnologyCard from "../components/UsedTechnologyCard";
-import ProfileCard from "../components/ProfileCard";
 import {
     SelectedTechnologyProvider,
 } from "../context/SelectedTechnologyContext";
-import JobList from "../components/JobList";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
 export default function Home() {
+    const ProfileCard = dynamic(() => import('../components/ProfileCard'), {
+        loading: () => <span>Loading profile ...</span>,
+    })
+    const JobList = dynamic(() => import('../components/JobList'), {
+        loading: () => <span>Loading jobs ...</span>,
+    })
+    const UsedTechnologyCard = dynamic(() => import('../components/UsedTechnologyCard'), {
+        loading: () => <span>Loading used technologies ...</span>,
+    })
     return (
         <div>
             <Head>
