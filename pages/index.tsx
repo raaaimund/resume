@@ -4,8 +4,9 @@ import {
     SelectedTechnologyProvider,
 } from "../context/SelectedTechnologyContext";
 import dynamic from "next/dynamic";
+import {InferGetStaticPropsType} from "next";
 
-export default function Home() {
+export default function Home(props: InferGetStaticPropsType<typeof getStaticProps>) {
     const ProfileCard = dynamic(() => import('../components/ProfileCard'), {
         loading: () => <span>Loading profile ...</span>,
     })
@@ -21,7 +22,7 @@ export default function Home() {
     return (
         <div>
             <Head>
-                <title>Raimund Rittnauer</title>
+                <title>{props.title}</title>
             </Head>
 
             <SelectedTechnologyProvider>
@@ -40,4 +41,16 @@ export default function Home() {
             <Footer/>
         </div>
     )
+}
+
+export const getStaticProps = async () => {
+    return {
+        props: {
+            title: "Raimund Rittnauer"
+        },
+    }
+}
+
+interface Props {
+    title: string
 }
